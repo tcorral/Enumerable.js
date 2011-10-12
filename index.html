@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <title>Adapter Pattern</title>
+    <script type="text/javascript" src="js/Enumerable.js"></script>
+  </head>
+  <body>
+    <div id="source">
+      <h2>Source</h2>
+      <pre>
+var aArray = [1, 2, 3, 4];
+var oEnum = new Enumerable(aArray);
+console.log("Antes de nada: [" + oEnum + "]");
+console.log("A�adir 7 a aArray: [" + oEnum.add(7) + "]");
+console.log("Buscar 4 dentro de aArray: " + oEnum.find(4));
+console.log("Eliminar 3 dentro de Array: " + oEnum.remove(3));
+
+console.log("Resultado final oEnum: [" + oEnum + "]");
+
+****************************************************************************
+
+var aEls = [5, 7, 9, 20];
+console.log("Antes de nada: [" + aEls + "]");
+console.log("A�adir 3 a aArray: [" + aEls.enumerable().add(3) + "]");
+console.log("Buscar 9 dentro de aArray: " + aEls.enumerable().find(9));
+console.log("Eliminar 20 dentro de Array: " + aEls.enumerable().remove(20));
+
+console.log("Resultado final aEls: [" + aEls + "]");
+      </pre>
+    </div>
+    <div id="console">
+    	<h2>Console</h2>
+	    <ul></ul>
+	    <h1>ENUMERABLE</h1>
+    </div>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript">
+		var aArray = [1, 2, 3, 4];
+		var oEnum = new Enumerable(aArray);
+		console.log("Antes de nada: [" + oEnum + "]");
+		console.log("A�adir 7 a aArray: [" + oEnum.add(7) + "]");
+		console.log("Buscar 4 dentro de aArray: " + oEnum.find(4));
+		console.log("Eliminar 3 dentro de Array: " + oEnum.remove(3));
+
+		console.log("Resultado final oEnum: [" + oEnum + "]");
+		console.log("************************************************************************");
+		var aEls = [5, 7, 9, 20];
+		console.log("Antes de nada: [" + aEls + "]");
+		console.log("A�adir 3 a aArray: [" + aEls.enumerable().add(3) + "]");
+		console.log("Buscar 9 dentro de aArray: " + aEls.enumerable().find(9));
+		console.log("Eliminar 20 dentro de Array: " + aEls.enumerable().remove(20));
+
+		console.log("Resultado final aEls: [" + aEls + "]");
+    </script>
+  </body>
+</html>

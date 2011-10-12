@@ -1,0 +1,1 @@
+## Experiment with Array and how to add some methods using Enumerable object.
